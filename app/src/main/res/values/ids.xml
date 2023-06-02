@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="fragment_container_view_tag" type="id" tools:ignore="DuplicateDefinition" />
+</resources>

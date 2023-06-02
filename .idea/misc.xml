@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/bottom_nav.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/button_bottom.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_angry.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_close_24.xml" value="0.105" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_format_list_bulleted_24.xml" value="0.1345" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_location_on_24.xml" value="0.1345" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_menu_24.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_play_circle_outline_24.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_search_24.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_facebook_logo.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_gaming.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_haha.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_like.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_love.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_marketplace.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_messenger.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_notification.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_photo.xml" value="0.105" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_reaction.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_resource_public.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_sad.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_share.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_watch.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_wow.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/back_select.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/back_tabs.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bottom_instagram.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/edittext_bg.xml" value="0.134" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.1545" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/icon_tinit_selector.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/item_selector.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/round_back_white10_100.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/tab_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_facebook.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_instagram.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_pinterest.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/contain_main.xml" value="0.24074074074074073" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/dialog_fb_reations.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/each_item.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/for_you_item.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_craft.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_flowers.xml" value="0.13858695652173914" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_for_you.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_girl.xml" value="0.13858695652173914" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home.xml" value="0.13136288998357964" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_lap_trinh.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_market_place.xml" value="0.176" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_marketplace.xml" value="0.253125" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_ngam.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_watch.xml" value="0.176" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_xinh.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/story_item_insta.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_instagram.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_items.xml" value="0.16" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
