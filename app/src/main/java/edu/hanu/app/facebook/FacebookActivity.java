@@ -26,7 +26,7 @@ import edu.hanu.app.R;
 
 public class FacebookActivity extends AppCompatActivity {
 
-    AppBarLayout topBar;
+    RelativeLayout topBar;
     TabLayout homeTabLayout;
     ViewPager contentView;
     TabItem tabHome, tabWatch, tabMarketPlace, tabGaming, tabNotification, tabMenu;
@@ -37,7 +37,7 @@ public class FacebookActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facebook);
 
-        topBar = findViewById(R.id.appBar);
+        topBar = findViewById(R.id.topBar);
         homeTabLayout = findViewById(R.id.homeTabLayout);
         contentView = findViewById(R.id.contentView);
 
