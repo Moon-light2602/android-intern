@@ -751,6 +751,7 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/image"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/desc" />
 
@@ -985,6 +986,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/desc2"
                     tools:ignore="DuplicateIds" />
+
 
                 <ImageView
                     android:id="@+id/like2"
