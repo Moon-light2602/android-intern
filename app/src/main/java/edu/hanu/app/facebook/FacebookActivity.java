@@ -1,92 +1,82 @@
 package edu.hanu.app.facebook;
 
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.FaceDetector;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.fragment.app.DialogFragment;
-import androidx.palette.graphics.Palette;
 import androidx.viewpager.widget.ViewPager;
 
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 import edu.hanu.app.R;
+import edu.hanu.app.facebook.adapters.FbAdapterViewPager;
+import edu.hanu.app.facebook.fragment.GamingFragment;
+import edu.hanu.app.facebook.fragment.HomeFragment;
+import edu.hanu.app.facebook.fragment.MarketPlaceFragment;
+import edu.hanu.app.facebook.fragment.MenuFragment;
+import edu.hanu.app.facebook.fragment.NotificationFragment;
+import edu.hanu.app.facebook.fragment.WatchFragment;
 
 public class FacebookActivity extends AppCompatActivity {
 
-    RelativeLayout topBar;
-    TabLayout homeTabLayout;
-    ViewPager contentView;
-    TabItem tabHome, tabWatch, tabMarketPlace, tabGaming, tabNotification, tabMenu;
-    PagerController pagerController;
+    int[] images = {R.drawable.img4, R.drawable.img5, R.drawable.img1, R.drawable.img7};
+    FbAdapterViewPager fbAdapterViewPager;
+    ViewPager postList;
+    TabLayout tabLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facebook);
 
-        topBar = findViewById(R.id.topBar);
-        homeTabLayout = findViewById(R.id.homeTabLayout);
-        contentView = findViewById(R.id.contentView);
 
-        tabGaming = findViewById(R.id.tabGaming);
-        tabHome = findViewById(R.id.tabHome);
-        tabMarketPlace = findViewById(R.id.tabMarketPlace);
-        tabWatch = findViewById(R.id.tabWatch);
-        tabNotification = findViewById(R.id.tabNotification);
-        tabMenu = findViewById(R.id.tabMenu);
+        postList = findViewById(R.id.post_list);
+        tabLayout = findViewById(R.id.tabLayoutFb);
 
-//        reaction_iv = findViewById(R.id.reaction_iv);
-//        reaction_btn =(Button) findViewById(R.id.reaction_btn);
+        setUpPagerAdapter();
 
-        pagerController = new PagerController(getSupportFragmentManager(), homeTabLayout.getTabCount());
-        contentView.setAdapter(pagerController);
+        setUpTabLayout();
 
-        homeTabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+    }
+
+    private void setUpPagerAdapter() {
+        fbAdapterViewPager = new FbAdapterViewPager(getSupportFragmentManager());
+        fbAdapterViewPager.addFragment(new HomeFragment(), "");
+        fbAdapterViewPager.addFragment(new WatchFragment(), "");
+        fbAdapterViewPager.addFragment(new MarketPlaceFragment(), "");
+        fbAdapterViewPager.addFragment(new GamingFragment(), "");
+        fbAdapterViewPager.addFragment(new NotificationFragment(), "");
+        fbAdapterViewPager.addFragment(new MenuFragment(), "");
+
+        postList.setAdapter(fbAdapterViewPager);
+    }
+    private void setUpTabLayout() {
+        tabLayout.setupWithViewPager(postList);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_home);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_watch);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_marketplace);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_gaming);
+        tabLayout.getTabAt(4).setIcon(R.drawable.ic_notification);
+        tabLayout.getTabAt(5).setIcon(R.drawable.ic_baseline_menu_24);
+
+        tabLayout.getTabAt(0).getIcon().setColorFilter(getResources().getColor(R.color.blue_500), PorterDuff.Mode.SRC_IN);
+        tabLayout.getTabAt(1).getIcon().setColorFilter(Color.DKGRAY, PorterDuff.Mode.SRC_IN);
+        tabLayout.getTabAt(2).getIcon().setColorFilter(Color.DKGRAY, PorterDuff.Mode.SRC_IN);
+        tabLayout.getTabAt(3).getIcon().setColorFilter(Color.DKGRAY, PorterDuff.Mode.SRC_IN);
+        tabLayout.getTabAt(4).getIcon().setColorFilter(Color.DKGRAY, PorterDuff.Mode.SRC_IN);
+        tabLayout.getTabAt(5).getIcon().setColorFilter(Color.DKGRAY, PorterDuff.Mode.SRC_IN);
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                contentView.setCurrentItem(tab.getPosition());
-                if (tab.getPosition() == 0) {
-                    pagerController.notifyDataSetChanged();
-                    topBar.setVisibility(View.VISIBLE);
-                }
-                if (tab.getPosition() == 1) {
-                    pagerController.notifyDataSetChanged();
-                    topBar.setVisibility(View.GONE);
-                }
-                if (tab.getPosition() == 2) {
-                    pagerController.notifyDataSetChanged();
-                    topBar.setVisibility(View.GONE);
-                }
-                if (tab.getPosition() == 3) {
-                    pagerController.notifyDataSetChanged();
-                    topBar.setVisibility(View.GONE);
-                }
-                if (tab.getPosition() == 4) {
-                    pagerController.notifyDataSetChanged();
-                    topBar.setVisibility(View.GONE);
-                }
-                if (tab.getPosition() == 5) {
-                    pagerController.notifyDataSetChanged();
-                    topBar.setVisibility(View.GONE);
-                }
+                tab.getIcon().setColorFilter(getResources().getColor(R.color.blue_500), PorterDuff.Mode.SRC_IN);
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
+                tab.getIcon().setColorFilter(Color.DKGRAY, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
@@ -94,50 +84,6 @@ public class FacebookActivity extends AppCompatActivity {
 
             }
         });
-        contentView.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(homeTabLayout));
 
-//        reaction_btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(FacebookActivity.this, FBReactionDialog.class);
-//                startActivity(intent);
-//            }
-//        });
-
-//    private DialogFragment getReactionDialog() {
-//        FBReactionDialog fbReactionDialog = new FBReactionDialog();
-//        fbReactionDialog.show(getSupportFragmentManager(), fbReactionDialog.getClass().getSimpleName());
-//        return fbReactionDialog;
-//    }
-//    public void onReactionSelected(int reactionType) {
-//        switch (reactionType){
-//            case 0:
-//                reaction_btn.setText("Like");
-//                reaction_iv.setImageResource(R.drawable.ic_like);
-//                break;
-//            case 1:
-//                reaction_btn.setText("Love");
-//                reaction_iv.setImageResource(R.drawable.ic_love);
-//                break;
-//            case 2:
-//                reaction_btn.setText("Haha");
-//                reaction_iv.setImageResource(R.drawable.ic_haha);
-//                break;
-//            case 3:
-//                reaction_btn.setText("Wow");
-//                reaction_iv.setImageResource(R.drawable.ic_wow);
-//                break;
-//            case 4:
-//                reaction_btn.setText("Sad");
-//                reaction_iv.setImageResource(R.drawable.ic_sad);
-//                break;
-//            case 5:
-//                reaction_btn.setText("Angry");
-//                reaction_iv.setImageResource(R.drawable.ic_angry);
-//                break;
-//
-//        }
-//    }
     }
-
 }
