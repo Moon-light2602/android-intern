@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TiktokActivity.class);
-                startActivity(intent);
+                 startActivity(intent);
             }
         });
     }

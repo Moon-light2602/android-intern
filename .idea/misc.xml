@@ -28,6 +28,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_share.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_watch.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_wow.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/account_tiktok.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/back_select.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/back_tabs.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg.xml" value="0.1" />
@@ -46,10 +47,11 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_instagram.xml" value="0.176" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_pinterest.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_tiktok.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/contain_main.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/dialog_fb_reations.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/each_item.xml" value="0.264" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_add_story_item.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_add_story_item.xml" value="0.189873417721519" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_post_multiple_image_item.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_post_one_image_item.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_story_item.xml" value="0.25416666666666665" />
@@ -67,11 +69,13 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_ngam.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_watch.xml" value="0.176" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_xinh.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_add_story_item.xml" value="0.6" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_add_story_item.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_post_item.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_back.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/story_item_insta.xml" value="0.4" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_instagram.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_items.xml" value="0.16" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_tiktok.xml" value="0.18515625" />
       </map>
     </option>
   </component>

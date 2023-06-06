@@ -12,7 +12,11 @@ import java.util.ArrayList;
 
 import edu.hanu.app.R;
 import edu.hanu.app.instagram.adapter.AdapterViewPager;
+import edu.hanu.app.instagram.fragment.AddFragment;
+import edu.hanu.app.instagram.fragment.AvatarFragment;
+import edu.hanu.app.instagram.fragment.ChatFragment;
 import edu.hanu.app.instagram.fragment.HomeFragment;
+import edu.hanu.app.instagram.fragment.SearchFragment;
 
 public class InstagramActivity extends AppCompatActivity {
     ViewPager2 viewPager2;

@@ -1,4 +1,4 @@
-package edu.hanu.app.instagram;
+package edu.hanu.app.instagram.fragment;
 
 import androidx.fragment.app.Fragment;
 

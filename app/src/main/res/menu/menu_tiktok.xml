@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeTiktok"
+        android:icon="@drawable/ic_home"
+        android:title="Trang chủ"
+        />
+
+    <item
+        android:id="@+id/shopTiktok"
+        android:icon="@drawable/bag"
+        android:title="Shop"
+       />
+
+    <item
+        android:id="@+id/addTiktok"
+        android:icon="@drawable/more"
+        android:title=""/>
+
+    <item
+        android:id="@+id/messageTiktok"
+        android:icon="@drawable/chat"
+        android:title="Hộp thư"
+        />
+
+    <item
+        android:id="@+id/userTiktok"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Hồ sơ"
+        />
+</menu>
