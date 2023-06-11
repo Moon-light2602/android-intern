@@ -1,5 +1,6 @@
 package edu.hanu.app.tiktok.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -36,10 +37,12 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.viewHolder
         return new viewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_back, parent, false));
     }
 
+    @SuppressLint("WrongConstant")
     @Override
-    public void onBindViewHolder(@NonNull VideosAdapter.viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         holder.setData(position);
-        holder.userId.setText(mVideosList.get(position).getUser_id());
+
+        holder.userTikTok.setTextAlignment(mVideosList.get(position).getUserTikTok());
         holder.textDesc.setText(mVideosList.get(position).getVideoDescription());
         Glide.with(context).load(mVideosList.get(position).getVideoUrl()).into(holder.userTikTok);
         holder.textDesc.setSelected(true);
@@ -56,6 +59,7 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.viewHolder
         TextView userId, textDesc;
         ProgressBar progressBar;
         CircleImageView userTikTok;
+
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);

@@ -2,18 +2,33 @@ package edu.hanu.app.facebook.models;
 
 import android.content.pm.PackageManager;
 
+import java.util.List;
+
 public class FbPost {
     private String userNameOfPost;
     private int userAvatar;
     private String postContent;
     private int userImage;
+    private List<Images> images;
+    private int type;
+    private int photo;
 
-    public FbPost(String userNameOfPost, int userAvatar, int userImage, String postContent) {
+    public FbPost(int type, String userNameOfPost, int userAvatar, int userImage, String postContent) {
         this.userNameOfPost = userNameOfPost;
         this.userAvatar = userAvatar;
         this.postContent = postContent;
-        this.userImage= userImage;
+        this.userImage = userImage;
+        this.type = type;
     }
+
+    public FbPost(int type, String userNameOfPost, int userAvatar, List<Images> images, String postContent) {
+        this.userNameOfPost = userNameOfPost;
+        this.userAvatar = userAvatar;
+        this.postContent = postContent;
+        this.images = images;
+        this.type = type;
+    }
+
 
     public String getUserNameOfPost() {
         return userNameOfPost;
@@ -48,5 +63,29 @@ public class FbPost {
 
     public void setUserImage(int userImage) {
         this.userImage = userImage;
+    }
+
+    public List<Images> getImages() {
+        return images;
+    }
+
+    public void setImages(List<Images> images) {
+        this.images = images;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public int getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(int photo) {
+        this.photo = photo;
     }
 }

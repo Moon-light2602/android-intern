@@ -19,13 +19,13 @@ import edu.hanu.app.facebook.adapters.FbPostAdapter;
 import edu.hanu.app.facebook.adapters.FbStoryAdapter;
 import edu.hanu.app.facebook.models.FbPost;
 import edu.hanu.app.facebook.models.FbStory;
+import edu.hanu.app.facebook.models.Images;
 
 public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_fb, container, false);
     }
 
@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         RecyclerView postList = view.findViewById(R.id.fb_post_list);
-        FbPostAdapter postAdapter = new FbPostAdapter(getPostList());
+        FbPostAdapter postAdapter = new FbPostAdapter(getContext(), getPostList());
 
         LinearLayoutManager manager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
         postList.setLayoutManager(manager);
@@ -65,13 +65,22 @@ public class HomeFragment extends Fragment {
     }
 
     private List<FbPost> getPostList() {
+
         List<FbPost> list = new ArrayList<>();
-        list.add(new FbPost("Mỹ Duyên", R.drawable.img4, R.drawable.img5, "Chuyện không muốn nhớ lại :(("));
-        list.add(new FbPost("Thanh Trang", R.drawable.img8, R.drawable.foryou4, "Cháy như free fire \uD83D\uDD25"));
-        list.add(new FbPost("Hoài Ngọc", R.drawable.img9, R.drawable.image, "Khi bạn làm sai công thức nhưng ra đúng kết quả"));
-        list.add(new FbPost("Hà Nội", R.drawable.img3, R.drawable.malibu, "Malibu trong mắt tôi \uD83E\uDEE3"));
-        list.add(new FbPost("Lang Thang Hà Nội", R.drawable.img2, R.drawable.image1, "Ngôn tình <3"));
-        list.add(new FbPost("K Love", R.drawable.img1, R.drawable.image2, "Top 10 đứa bé hiểu chuyện nhất phim Hàn\n" +
+
+        List<Images> images = new ArrayList<>();
+
+        images.add(new Images(R.drawable.img3));
+        images.add(new Images(R.drawable.img2));
+        images.add(new Images(R.drawable.img1));
+        images.add(new Images(R.drawable.img5));
+
+        list.add(new FbPost(FbPostAdapter.IMAGE,"Mỹ Duyên", R.drawable.img4, R.drawable.img5, "Chuyện không muốn nhớ lại :(("));
+        list.add(new FbPost(FbPostAdapter.MULTI_IMAGE,"Thanh Trang", R.drawable.img8, images, "Cháy như free fire \uD83D\uDD25"));
+        list.add(new FbPost(FbPostAdapter.IMAGE,"Hoài Ngọc", R.drawable.img9, R.drawable.image, "Khi bạn làm sai công thức nhưng ra đúng kết quả"));
+        list.add(new FbPost(FbPostAdapter.IMAGE,"Hà Nội", R.drawable.img3, R.drawable.malibu, "Malibu trong mắt tôi \uD83E\uDEE3"));
+        list.add(new FbPost(FbPostAdapter.IMAGE,"Lang Thang Hà Nội", R.drawable.img2, R.drawable.image1, "Ngôn tình <3"));
+        list.add(new FbPost(FbPostAdapter.IMAGE,"K Love", R.drawable.img1, R.drawable.image2, "Top 10 đứa bé hiểu chuyện nhất phim Hàn\n" +
                 "Top 1:"));
 
         return list;

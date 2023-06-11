@@ -25,7 +25,6 @@ public class FacebookActivity extends AppCompatActivity {
     ViewPager postList;
     TabLayout tabLayout;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

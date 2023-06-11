@@ -35,7 +35,10 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostHolder> {
         holder.userAvatarPost.setImageResource(post.getAvatar());
         holder.userNamePost.setText(post.getUserName());
         holder.postDesc.setText(post.getUserDesc());
-        holder.postImage.setImageResource(post.getImage());
+        holder.postImage.setImageResource(post.getInstaImage());
+        holder.contentPost.setText(post.getContentPost());
+        holder.commentOfUser.setText(post.getCommentOfUser());
+        holder.comment.setText(post.getComment());
     }
 
     @Override
@@ -46,7 +49,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostHolder> {
 
     public class PostHolder extends RecyclerView.ViewHolder {
 
-        private TextView userNamePost, postDesc;
+        private TextView userNamePost, postDesc, contentPost, commentOfUser, comment, likeNumber;
         private ImageView postImage;
         private CircleImageView userAvatarPost;
 
@@ -56,6 +59,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostHolder> {
             userNamePost = itemView.findViewById(R.id.ins_user_name_post);
             postImage = itemView.findViewById(R.id.ins_post_image);
             postDesc = itemView.findViewById(R.id.ins_post_desc);
+            contentPost = itemView.findViewById(R.id.content_post);
+            commentOfUser = itemView.findViewById(R.id.commenter_name);
+            comment = itemView.findViewById(R.id.comment);
         }
     }
 }

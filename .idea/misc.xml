@@ -41,6 +41,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/icon_tinit_selector.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/item_selector.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/round_back_white10_100.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/search_view.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/tab_indicator.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_collapse.xml" value="0.176" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_facebook.xml" value="0.1" />
@@ -52,7 +53,8 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/dialog_fb_reations.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/each_item.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_add_story_item.xml" value="0.189873417721519" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_post_multiple_image_item.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_one_image_item.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_post_multiple_image_item.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_post_one_image_item.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_story_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/for_you_item.xml" value="0.2" />
@@ -62,16 +64,17 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_girl.xml" value="0.13858695652173914" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home_fb.xml" value="0.1" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home_instagram.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home_instagram.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_lap_trinh.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_market_place.xml" value="0.176" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_marketplace.xml" value="0.253125" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_ngam.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_search_instagram.xml" value="0.152" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_watch.xml" value="0.176" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_xinh.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_add_story_item.xml" value="0.1" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_post_item.xml" value="0.1" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_back.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_post_item.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_back.xml" value="0.4" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/story_item_insta.xml" value="0.4" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_instagram.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_items.xml" value="0.16" />

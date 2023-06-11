@@ -58,12 +58,10 @@ public class HomeFragment extends Fragment {
 
     private List<Post> getPostList() {
         List<Post> list = new ArrayList<>();
-        list.add(new Post(R.drawable.img5, "Tuan Anh", "22/02/2023", R.drawable.img6));
-        list.add(new Post(R.drawable.img1, "Hoang Anh", "26/04/2023", R.drawable.img2));
-        list.add(new Post(R.drawable.img3, "Ngoc Lan", "29/05/2023", R.drawable.img4));
-        list.add(new Post(R.drawable.img7, "Thanh Trang", "30/05/2023", R.drawable.img8));
-        list.add(new Post(R.drawable.image2, "My Duyen", "31/05/2023", R.drawable.img9));
-        list.add(new Post(R.drawable.img10, "Dieu Thao", "02/06/2023", R.drawable.img8));
+        list.add(new Post(R.drawable.img5, R.drawable.img6, "Tuan Anh", "22/02/2023", "Change the world by being yourself", "Baby", "So cute"));
+        list.add(new Post(R.drawable.img1, R.drawable.img2, "Hoang Anh", "26/04/2023", "Every moment is a fresh beginning", "DinDin", "Nothing!!!"));
+        list.add(new Post(R.drawable.img3, R.drawable.img4, "Ngoc Lan", "29/05/2023", "Nothing is impossible","TunTun" ,"Time doesn't matter, love is forever."));
+        list.add(new Post(R.drawable.img7, R.drawable.img8,"Thanh Trang", "30/05/2023", "Love harder than any pain you've ever felt","Love", "So beautiful!"));
 
         return list;
     }
