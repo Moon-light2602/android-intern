@@ -14,7 +14,6 @@
         android:layout_marginVertical="8dp"
         android:background="@drawable/search_view"
         android:queryHint="Tìm kiếm"
-        android:queryBackground="@android:color/transparent"
         android:iconifiedByDefault="false"
         app:layout_constraintBottom_toTopOf="@id/rcvPhoto"
         app:layout_constraintEnd_toEndOf="parent"
