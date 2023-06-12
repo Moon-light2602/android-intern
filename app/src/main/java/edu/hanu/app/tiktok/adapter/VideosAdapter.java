@@ -1,10 +1,8 @@
 package edu.hanu.app.tiktok.adapter;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
@@ -14,69 +12,64 @@ import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.List;
 
-import de.hdodenhof.circleimageview.CircleImageView;
 import edu.hanu.app.R;
 import edu.hanu.app.tiktok.model.VideoItem;
 
 public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.viewHolder> {
 
     private List<VideoItem> mVideosList;
-    Context context;
 
-    public VideosAdapter(List<VideoItem> videoItems, Context ctx) {
+    public VideosAdapter(List<VideoItem> videoItems) {
         mVideosList = videoItems;
-        context = ctx;
     }
     @NonNull
     @Override
     public VideosAdapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new viewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_back, parent, false));
+    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_video_tiktok, parent, false);
+    return new viewHolder(view);
     }
 
-    @SuppressLint("WrongConstant")
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        holder.setData(position);
-
-        holder.userTikTok.setTextAlignment(mVideosList.get(position).getUserTikTok());
-        holder.textDesc.setText(mVideosList.get(position).getVideoDescription());
-        Glide.with(context).load(mVideosList.get(position).getVideoUrl()).into(holder.userTikTok);
-        holder.textDesc.setSelected(true);
+        holder.setVideoItem(mVideosList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return mVideosList.size();
+        if(mVideosList != null) {
+            return mVideosList.size();
+        }
+        return 0;
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
 
-        public VideoView mVideoView;
-        TextView userId, textDesc;
-        ProgressBar progressBar;
-        CircleImageView userTikTok;
+       VideoView videoView;
+       TextView userName, videoDesc, videoHastag, musicName;
+       ProgressBar progressBar;
 
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
-            mVideoView = itemView.findViewById(R.id.videoView);
-            textDesc = itemView.findViewById(R.id.textDesc);
-            userId = itemView.findViewById(R.id.user_id);
-            progressBar = itemView.findViewById(R.id.progressBar);
-            userTikTok = itemView.findViewById(R.id.userTikTok);
+           videoView = itemView.findViewById(R.id.videoView);
+           userName = itemView.findViewById(R.id.user_name);
+           videoDesc = itemView.findViewById(R.id.video_desc);
+           videoHastag = itemView.findViewById(R.id.video_hastag);
+           musicName = itemView.findViewById(R.id.music_name);
+           progressBar = itemView.findViewById(R.id.videoProgressBar);
 
         }
-        void setData(int position){
-            if(mVideosList.get(position).getVideoUrl() != null) {
-                mVideoView.setVideoURI(Uri.parse(mVideosList.get(position).getVideoUrl()));
-            }
+        public void setVideoItem(VideoItem videoItem) {
+            userName.setText(videoItem.getUserName());
+            videoDesc.setText(videoItem.getVideoDesc());
+            videoHastag.setText(videoItem.getVideoHastag());
+            musicName.setText(videoItem.getMusicName());
+            videoView.setVideoPath(videoItem.getVideoUrl());
 
-            mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mediaPlayer) {
                     progressBar.setVisibility(View.GONE);
@@ -84,13 +77,18 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.viewHolder
                 }
             });
 
-            mVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            videoView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
-                public void onCompletion(MediaPlayer mediaPlayer) {
-                    mediaPlayer.start();
+                public boolean onTouch(View view, MotionEvent motionEvent) {
+                    if(videoView.isPlaying()) {
+                        videoView.pause();
+                        return false;
+                    } else {
+                        videoView.start();
+                        return false;
+                    }
                 }
             });
-    }
-
+        }
     }
 }

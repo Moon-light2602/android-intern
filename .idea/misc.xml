@@ -48,7 +48,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_instagram.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_pinterest.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_tiktok.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_tiktok.xml" value="0.12" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/contain_main.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/dialog_fb_reations.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/each_item.xml" value="0.264" />
@@ -66,6 +66,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home_fb.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home_instagram.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_home_tiktok.xml" value="0.16621376811594202" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_lap_trinh.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_market_place.xml" value="0.176" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_marketplace.xml" value="0.253125" />
