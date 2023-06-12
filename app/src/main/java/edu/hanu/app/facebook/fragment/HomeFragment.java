@@ -75,12 +75,14 @@ public class HomeFragment extends Fragment {
         images.add(new Images(R.drawable.img1));
         images.add(new Images(R.drawable.img5));
 
+        String videoUrl = "https://firebasestorage.googleapis.com/v0/b/design-ui-bd258.appspot.com/o/TRAILER%20%233%20-%20VI%20C%C3%81%20TI%E1%BB%80N%20TRUY%E1%BB%86N%20-%20C%C3%81%20CON%20V%C6%AF%E1%BB%A2T%20BI%E1%BB%82N%20L%E1%BB%9AN%20-%20Qu%C3%A1ch%20Ng%E1%BB%8Dc%20Tuy%C3%AAn%2C%20H%E1%BB%A9a%20Minh%20%C4%90%E1%BA%A1t%2C%20Will%2C%20DJ%20Mie.mp4?alt=media&token=1a9ed919-b8e8-41bf-ae09-264717879047&_gl=1*1ccsrq2*_ga*NTYzOTM3OTM5LjE2ODY1ODcwNjE.*_ga_CW55HF8NVT*MTY4NjU5OTc3NC4yLjEuMTY4NjYwMDkwOC4wLjAuMA..";
+
         list.add(new FbPost(FbPostAdapter.IMAGE,"Mỹ Duyên", R.drawable.img4, R.drawable.img5, "Chuyện không muốn nhớ lại :(("));
         list.add(new FbPost(FbPostAdapter.MULTI_IMAGE,"Thanh Trang", R.drawable.img8, images, "Cháy như free fire \uD83D\uDD25"));
         list.add(new FbPost(FbPostAdapter.IMAGE,"Hoài Ngọc", R.drawable.img9, R.drawable.image, "Khi bạn làm sai công thức nhưng ra đúng kết quả"));
         list.add(new FbPost(FbPostAdapter.IMAGE,"Hà Nội", R.drawable.img3, R.drawable.malibu, "Malibu trong mắt tôi \uD83E\uDEE3"));
         list.add(new FbPost(FbPostAdapter.IMAGE,"Lang Thang Hà Nội", R.drawable.img2, R.drawable.image1, "Ngôn tình <3"));
-        list.add(new FbPost(FbPostAdapter.IMAGE,"K Love", R.drawable.img1, R.drawable.image2, "Top 10 đứa bé hiểu chuyện nhất phim Hàn\n" +
+        list.add(new FbPost(FbPostAdapter.VIDEO,"K Love", R.drawable.img1, videoUrl, "TRAILER # Vi Cá tiền truyện" +
                 "Top 1:"));
 
         return list;

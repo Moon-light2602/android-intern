@@ -12,6 +12,7 @@ public class FbPost {
     private List<Images> images;
     private int type;
     private int photo;
+    private String videoUrl;
 
     public FbPost(int type, String userNameOfPost, int userAvatar, int userImage, String postContent) {
         this.userNameOfPost = userNameOfPost;
@@ -29,6 +30,13 @@ public class FbPost {
         this.type = type;
     }
 
+    public FbPost(int type,String userNameOfPost, int userAvatar, String videoUrl, String postContent ) {
+        this.userNameOfPost = userNameOfPost;
+        this.userAvatar = userAvatar;
+        this.postContent = postContent;
+        this.type = type;
+        this.videoUrl = videoUrl;
+    }
 
     public String getUserNameOfPost() {
         return userNameOfPost;
@@ -87,5 +95,13 @@ public class FbPost {
 
     public void setPhoto(int photo) {
         this.photo = photo;
+    }
+
+    public String getVideoUrl() {
+        return videoUrl;
+    }
+
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
     }
 }
