@@ -30,10 +30,10 @@
       android:src="@drawable/facebook"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.745"
+      app:layout_constraintHorizontal_bias="0.718"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.351"
+      app:layout_constraintVertical_bias="0.35"
       tools:ignore="MissingConstraints" />
 
   <ImageView
@@ -44,11 +44,10 @@
       android:src="@drawable/instagram"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.212"
+      app:layout_constraintHorizontal_bias="0.224"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.608"
-      tools:ignore="MissingConstraints" />
+      app:layout_constraintTop_toBottomOf="@+id/imgPinterest"
+      app:layout_constraintVertical_bias="0.224" />
 
   <ImageView
       android:id="@+id/imgTiktok"
@@ -58,9 +57,9 @@
       android:src="@drawable/tiktok"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.455"
+      app:layout_constraintHorizontal_bias="0.458"
       app:layout_constraintStart_toEndOf="@+id/imgInstagram"
       app:layout_constraintTop_toBottomOf="@+id/imgFacebook"
-      app:layout_constraintVertical_bias="0.2" />
+      app:layout_constraintVertical_bias="0.224" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
