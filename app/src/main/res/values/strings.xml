@@ -1,39 +1,12 @@
 <resources>
-    <string name="app_name">Pinterest</string>
+    <string name="app_name">App</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="sample_string">
-        1.	Some applications of Neural Network (DL in particular) in healthcare industry:
--	Clinical diagnosis, prediction of cancer, speech recognition, prediction of length of stay, image analysis and interpretation.
-2.	Some applications of DL (if) you have meet in real life:
--	Wi-Fi
--	Speech recognition
--	Medical diagnosis: many physicians use chatbots with speech recognition capabilities to discern patterns in symptoms.
--	Extraction.
-3.
--	Artificial neural networks are created to digitally mimic the human brain. They are currently used for complex analyses in various fields, ranging from medicine to engineering, and these networks can be used to design the next generation of computers.
--	Advantages:
-o	Use them to build models of the human body that could help doctors accurately diagnose diseases in their patients.
-o	Thanks to ANN, complex medical images, such as CT scans, can be analyzed more quickly and accurately.
-o	Machines based on neural networks will be able to solve many abstract problems on their own.
-4.
--	A new network with a single layer is called a perceptron.
-5.	Activation function in Neural Network:
--	Is a function that is added into an artificial neural network to help the network learn complex patterns in the data.
--	Activation functions play an integral role in neural networks by introducing nonlinearity. This nonlinearity allows neural networks to develop complex representations and functions based on the inputs that would not be possible with a simple linear regression model.
-6.	Some popular activation function:
--	Sigmoid (Logistic)
--	Hyperbolic Tangent (Tanh)
--	Rectified Linear Unit (ReLU)
--	Leaky ReLU
--	Parametric leaky ReLU (PReLU)
-7.
--	In neural networks, a hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output.
--	Why is it called “Hidden”?
-	They are “hidden” because the true values of their nodes are unknown in the training dataset. In fact, we only know the input and output. Each neural network has at least one hidden layer.
-8.	How many hidden layers in Neural Network?
--	If data is less complex and is having fewer dimensions or features, then neural networks with 1 to 2 hidden layers would work. If data is having large dimensions or features then to get an optimum solution, 3 to 5 hidden layers can be used.
--	The number of hidden neurons should be between the size of the input layer and the output layer.
--	The most appropriate number of hidden neurons is: sqrt (input layer nodes * output layer nodes).
 
-    </string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="bottom_chats">Chats</string>
+    <string name="nav_marketplace">Marketplace</string>
+    <string name="nav_message_requests">Message requests</string>
+    <string name="nav_archive">Archive</string>
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/bottom_chats"
+            android:title="Chats"
+            android:icon="@drawable/chat_mess"/>
+
+        <item android:id="@+id/nav_marketplace"
+            android:title="Marketplace"
+            android:icon="@drawable/marketplace_mess"/>
+
+        <item android:id="@+id/nav_message_request"
+            android:title="Message requests"
+            android:icon="@drawable/chat_bubble"/>
+
+        <item android:id="@+id/nav_archive"
+            android:title="Archive"
+            android:icon="@drawable/archives"/>
+    </group>
+</menu>

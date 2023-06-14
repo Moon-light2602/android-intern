@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Pinterest"
         tools:targetApi="31">
 
+        <activity android:name=".messenger.MessengerActivity"
+            android:exported="false" />
+
         <activity android:name=".tiktok.TiktokActivity"
             android:exported="false" />
         <activity

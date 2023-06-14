@@ -9,11 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import edu.hanu.app.facebook.FacebookActivity;
 import edu.hanu.app.instagram.InstagramActivity;
+import edu.hanu.app.messenger.MessengerActivity;
 import edu.hanu.app.pinterest.PinterestActivity;
 import edu.hanu.app.tiktok.TiktokActivity;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView pinterest, facebook, instagram, tiktok;
+    ImageView pinterest, facebook, instagram, tiktok, messenger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         facebook = findViewById(R.id.imgFacebook);
         instagram = findViewById(R.id.imgInstagram);
         tiktok = findViewById(R.id.imgTiktok);
+        messenger = findViewById(R.id.imgMessenger);
 
         pinterest.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TiktokActivity.class);
                  startActivity(intent);
+            }
+        });
+
+        messenger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MessengerActivity.class);
+                startActivity(intent);
             }
         });
     }
