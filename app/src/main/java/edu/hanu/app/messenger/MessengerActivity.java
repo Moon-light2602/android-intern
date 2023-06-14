@@ -28,6 +28,7 @@ public class MessengerActivity extends AppCompatActivity implements NavigationVi
     private static final int FRAGMENT_STORIES = 3;
 
     private DrawerLayout drawerLayout;
+    private int currentFragment = FRAGMENT_CHATS;
     private TabLayout tabLayout;
     private BottomNavigationView bottomNavigationView;
     private ViewPager2 viewPager2;
@@ -62,16 +63,20 @@ public class MessengerActivity extends AppCompatActivity implements NavigationVi
                 super.onPageSelected(position);
                 switch (position) {
                     case FRAGMENT_CHATS:
+                        currentFragment = FRAGMENT_CHATS;
                         navigationView.getMenu().findItem(R.id.bottom_chats).setChecked(true);
                         bottomNavigationView.getMenu().findItem(R.id.bottom_chats).setChecked(true);
                         break;
                     case FRAGMENT_CALLS:
+                        currentFragment = FRAGMENT_CALLS;
                         bottomNavigationView.getMenu().findItem(R.id.bottom_calls).setChecked(true);
                         break;
                     case FRAGMENT_PEOPLE:
+                        currentFragment = FRAGMENT_PEOPLE;
                         bottomNavigationView.getMenu().findItem(R.id.bottom_people).setChecked(true);
                         break;
                     case FRAGMENT_STORIES:
+                        currentFragment = FRAGMENT_STORIES;
                         bottomNavigationView.getMenu().findItem(R.id.bottom_stories).setChecked(true);
                         break;
                 }
@@ -96,6 +101,7 @@ public class MessengerActivity extends AppCompatActivity implements NavigationVi
                         viewPager2.setCurrentItem(FRAGMENT_STORIES);
                         break;
                 }
+                setTitleToolBar();
                 return true;
             }
         });
@@ -108,12 +114,44 @@ public class MessengerActivity extends AppCompatActivity implements NavigationVi
             case R.id.bottom_chats:
                 viewPager2.setCurrentItem(FRAGMENT_CHATS);
                 break;
+            case R.id.bottom_calls:
+                viewPager2.setCurrentItem(FRAGMENT_CALLS);
+                break;
+            case R.id.bottom_people:
+                viewPager2.setCurrentItem(FRAGMENT_PEOPLE);
+                break;
+            case R.id.bottom_stories:
+                viewPager2.setCurrentItem(FRAGMENT_STORIES);
+                break;
 
         }
-
+        setTitleToolBar();
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
 }
+
+    private void setTitleToolBar() {
+        String title = "";
+        switch (currentFragment) {
+            case 0:
+                title = getString(R.string.bottom_chats);
+                break;
+            case 1:
+                title = getString(R.string.bottom_calls);
+                break;
+            case 2:
+                title = getString(R.string.bottom_people);
+                break;
+            case 3:
+                title = getString(R.string.bottom_stories);
+                break;
+        }
+
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(title);
+        }
+    }
+
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {

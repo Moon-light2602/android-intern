@@ -59,7 +59,7 @@ public class TiktokActivity extends AppCompatActivity {
                         bottomNavigationView.getMenu().findItem(R.id.messageTiktok).setChecked(true);
                         break;
                     case 4:
-                        bottomNavigationView.getMenu().findItem(R.id.userTikTok).setChecked(true);
+                        bottomNavigationView.getMenu().findItem(R.id.userTiktok).setChecked(true);
                         break;
                 }
             }
@@ -86,7 +86,7 @@ public class TiktokActivity extends AppCompatActivity {
                     case R.id.messageTiktok:
                         tikTokViewPager.setCurrentItem(3);
                         break;
-                    case R.id.userTikTok:
+                    case R.id.userTiktok:
                         tikTokViewPager.setCurrentItem(4);
                         break;
                 }
