@@ -30,12 +30,12 @@
                 android:id="@+id/status_bar"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:hint="Bạn đang nghĩ gì?"
-                android:textColorHint="@color/black"
-                android:background="@drawable/custom_background_status_bar"
                 android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/avatar_user"
+                android:background="@drawable/custom_background_status_bar"
+                android:hint="Bạn đang nghĩ gì?"
                 android:paddingLeft="20dp"
-                android:layout_toRightOf="@id/avatar_user"/>
+                android:textColorHint="@color/black" />
 
             <ImageView
                 android:layout_width="20dp"

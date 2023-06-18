@@ -1,4 +1,4 @@
-package edu.hanu.app.messenger.adpaters;
+package edu.hanu.app.messenger.fragments;
 
 import androidx.fragment.app.Fragment;
 

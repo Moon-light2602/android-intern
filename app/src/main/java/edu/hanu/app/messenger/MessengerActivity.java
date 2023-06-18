@@ -15,7 +15,6 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.tabs.TabLayout;
 
 import edu.hanu.app.R;
 import edu.hanu.app.messenger.adpaters.ViewPagerAdapter;
@@ -29,7 +28,6 @@ public class MessengerActivity extends AppCompatActivity implements NavigationVi
 
     private DrawerLayout drawerLayout;
     private int currentFragment = FRAGMENT_CHATS;
-    private TabLayout tabLayout;
     private BottomNavigationView bottomNavigationView;
     private ViewPager2 viewPager2;
     private ViewPagerAdapter viewPagerAdapter;

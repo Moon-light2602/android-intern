@@ -12,4 +12,87 @@
     <string name="nav_marketplace">Marketplace</string>
     <string name="nav_message_requests">Message requests</string>
     <string name="nav_archive">Archive</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="chatListNames">
+        <item>Mohamed Atouch</item>
+        <item>Omar Aouzal</item>
+        <item>Ayoub Boho</item>
+        <item>Mohsin Afir</item>
+        <item>Abdel Elbazi</item>
+        <item>Hassan Aitouatouch</item>
+    </string-array>
+    <string-array name="chatListHints">
+        <item>Culpa qui officia deserunt mollit anim id est laborum.</item>
+        <item>Olore eu fugiat nulla pariatur</item>
+        <item>Duis aute irure dolor in reprehende</item>
+        <item>Quis nostrud exercitation ullamco laboris</item>
+        <item>Lorem ipsum dolor sit amet, cons</item>
+        <item>sunt in culpa qui officia deser</item>
+    </string-array>
+    <string-array name="chatListDates">
+        <item>12:35</item>
+        <item>14:42</item>
+        <item>Yesterday</item>
+        <item>15/11/2014</item>
+        <item>20/09/2014</item>
+        <item>15/12/2013</item>
+    </string-array>
+
+    <integer-array name="chatListNewCounts">
+        <item>5</item>
+        <item>3</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <string-array name="chatListImages">
+        <item>img1</item>
+        <item>img2</item>
+        <item>img4</item>
+        <item>img5</item>
+        <item>imh7</item>
+        <item>img3</item>
+    </string-array>
+    <string-array name="usersLastSeen">
+        <item>Online</item>
+        <item>Last Seen 14:42</item>
+        <item>Last Seen Yesterday</item>
+        <item>Online</item>
+        <item>Last Seen 20/09/2014</item>
+        <item>Last Seen 15/12/2013</item>
+    </string-array>
+    <string name="lorem">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</string>
+
+    <string-array name="chatMessages">
+        <item>hello dear how are you</item>
+        <item>i am fine thanks what about you does everything okay</item>
+        <item>yes </item>
+        <item>dont worry i am fine</item>
+        <item>good </item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur.</item>
+    </string-array>
+    <string-array name="chatMessagesFrom">
+        <item>me</item>
+        <item>other</item>
+        <item>me</item>
+        <item>me</item>
+        <item>other</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="chatMessagesDate">
+        <item>14:50</item>
+        <item>14:52</item>
+        <item>13:00</item>
+        <item>13:05</item>
+        <item>13:30</item>
+        <item>13:32</item>
+    </string-array>
+
 </resources>

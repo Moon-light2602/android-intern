@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/background_status_messenger.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/bg_chat_item_new_count.xml" value="0.154" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/bottom_nav.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/button_bottom.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/check.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_angry.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_close_24.xml" value="0.105" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_baseline_format_list_bulleted_24.xml" value="0.1345" />
@@ -28,12 +31,20 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_share.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_watch.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/ic_wow.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/information.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/mess_active_status.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/account_tiktok.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/back_select.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/back_tabs.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg_action_bar.xml" value="0.122" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg_bubble_left.xml" value="0.136" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg_bubble_right.xml" value="0.136" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg_chat_item_new_count.xml" value="0.1225" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bg_chat_messages.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/bottom_instagram.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/custom_add_story_icon.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/custom_background_edittext.xml" value="0.1745" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/custom_background_status_bar.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/edittext_bg.xml" value="0.134" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/gradient.xml" value="0.1" />
@@ -42,14 +53,19 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/item_selector.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/round_back_white10_100.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/search_view.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/search_view_messenger.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/tab_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_chat.xml" value="0.4" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_collapse.xml" value="0.176" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_facebook.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_instagram.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_messenger.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_messenger.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_pinterest.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_second.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_tiktok.xml" value="0.12" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/bubble_left.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/bubble_right.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/contain_main.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/dialog_fb_reations.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/each_item.xml" value="0.264" />
@@ -60,7 +76,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_story_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fb_video_item.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/for_you_item.xml" value="0.2" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_chats_messenger.xml" value="0.2578125" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_chats_messenger.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_craft.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_flowers.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/fragment_for_you.xml" value="0.1" />
@@ -82,13 +98,22 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_large_item.xml" value="0.1671195652173913" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/insta_post_item.xml" value="0.4" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_back.xml" value="0.17861975642760486" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_chat_horizontal.xml" value="0.72" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_chat_vertical.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_receive.xml" value="0.13903985507246377" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_send.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_video_tiktok.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/list_item_chat_messenger.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/mess_icon_phone_call.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/phone_call.xml" value="0.24592391304347827" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/story_item_insta.xml" value="0.4" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/bottom_navigation_messenger.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/chat_conversation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_instagram.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_items.xml" value="0.16" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_tiktok.xml" value="0.18515625" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/nav_messenger.xml" value="0.128" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_toolbar_messenger.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/nav_messenger.xml" value="0.264" />
       </map>
     </option>
   </component>

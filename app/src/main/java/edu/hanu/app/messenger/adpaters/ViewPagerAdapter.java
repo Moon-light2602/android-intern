@@ -11,6 +11,7 @@ import java.util.List;
 import edu.hanu.app.messenger.fragments.CallsFragment;
 import edu.hanu.app.messenger.fragments.ChatsFragment;
 import edu.hanu.app.messenger.fragments.PeopleFragment;
+import edu.hanu.app.messenger.fragments.StoriesFragment;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {

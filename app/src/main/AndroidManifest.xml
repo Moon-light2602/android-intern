@@ -18,6 +18,9 @@
         <activity android:name=".messenger.MessengerActivity"
             android:exported="false" />
 
+        <activity android:name=".messenger.ChatActivity"
+            android:exported="false"/>
+
         <activity android:name=".tiktok.TiktokActivity"
             android:exported="false" />
         <activity
