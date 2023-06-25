@@ -45,11 +45,11 @@ public class ChatActivity extends AppCompatActivity {
 
     private List<BubbleChat> getListChat() {
         List<BubbleChat> list = new ArrayList<>();
-        list.add(new BubbleChat(ChatMessageAdapter.TYPE_SENDER, R.drawable.img2, "Hello!"));
-        list.add(new BubbleChat(ChatMessageAdapter.TYPE_RECEIVER, "Hi, Have a nice day!"));
-        list.add(new BubbleChat(ChatMessageAdapter.TYPE_SENDER, R.drawable.img2, "How are you today?"));
-        list.add(new BubbleChat(ChatMessageAdapter.TYPE_RECEIVER, "Great!!!"));
-        list.add(new BubbleChat(ChatMessageAdapter.TYPE_RECEIVER,"... :v"));
+        list.add(new BubbleChat(ChatMessageAdapter.SENDER, R.drawable.img2, "Hello!"));
+        list.add(new BubbleChat(ChatMessageAdapter.RECEIVER, "Hi, Have a nice day!"));
+        list.add(new BubbleChat(ChatMessageAdapter.SENDER, R.drawable.img2, "How are you today?"));
+        list.add(new BubbleChat(ChatMessageAdapter.RECEIVER, "Great!!!"));
+        list.add(new BubbleChat(ChatMessageAdapter.RECEIVER,"... :v"));
 
         return list;
     }

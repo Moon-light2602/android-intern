@@ -37,31 +37,32 @@ public class ChatsFragment extends Fragment implements ConversationListener {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        RecyclerView rcvHorizontal = view.findViewById(R.id.rcvHorizontal);
-        LinearLayoutManager horizontalLayout = new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false);
-        rcvHorizontal.setLayoutManager(horizontalLayout);
-        HomeChatListAdapter adapter = new HomeChatListAdapter(getListChatHorizontal(), this);
-        rcvHorizontal.setAdapter(adapter);
 
-        RecyclerView rvVertical = view.findViewById(R.id.rcvVertical);
+        RecyclerView story = view.findViewById(R.id.story);
+        LinearLayoutManager horizontalLayout = new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false);
+        story.setLayoutManager(horizontalLayout);
+        HomeChatListAdapter homeChatListAdapter = new HomeChatListAdapter(getListChatHorizontal(), this);
+        story.setAdapter(homeChatListAdapter);
+
+        RecyclerView listChat = view.findViewById(R.id.list_chat);
         LinearLayoutManager manager1 = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
-        rvVertical.setLayoutManager(manager1);
-        Adapter adapter2 = new Adapter(getListChatVertical());
-        rvVertical.setAdapter(adapter2);
+        listChat.setLayoutManager(manager1);
+        Adapter adapter = new Adapter(getListChatVertical(), this);
+        listChat.setAdapter(adapter);
     }
 
     private List<ChatMessages> getListChatVertical() {
         List<ChatMessages> list = new ArrayList<>();
-        list.add(new ChatMessages(R.drawable.img6, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img4, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img8, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img10, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img9, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img3, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img1, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img2, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img7, "User name 1", "Content"));
-        list.add(new ChatMessages(R.drawable.img3, "User name 1", "Content"));
+        list.add(new ChatMessages(R.drawable.img6, "User name 1", "Hi!!!"));
+        list.add(new ChatMessages(R.drawable.img4, "User name 2", "Hello"));
+        list.add(new ChatMessages(R.drawable.img8, "User name 3", "How old are you?"));
+        list.add(new ChatMessages(R.drawable.img10, "User name 4", "Great!!"));
+        list.add(new ChatMessages(R.drawable.img9, "User name 5", "Thank you very much!!"));
+        list.add(new ChatMessages(R.drawable.img3, "User name 6", "Sorry =(("));
+        list.add(new ChatMessages(R.drawable.img1, "User name 7", "Oh yeah!!!"));
+        list.add(new ChatMessages(R.drawable.img2, "User name 8", "Are you there??"));
+        list.add(new ChatMessages(R.drawable.img7, "User name 9", "Come here"));
+        list.add(new ChatMessages(R.drawable.img3, "User name 10", "Don't talk to me!!"));
 
         return list;
     }

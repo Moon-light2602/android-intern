@@ -19,7 +19,7 @@
       app:layout_constraintEnd_toStartOf="@+id/imgFacebook"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.351"
+      app:layout_constraintVertical_bias="0.499"
       tools:ignore="MissingConstraints" />
 
   <ImageView
@@ -30,10 +30,10 @@
       android:src="@drawable/facebook"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.718"
+      app:layout_constraintHorizontal_bias="0.762"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.35"
+      app:layout_constraintVertical_bias="0.499"
       tools:ignore="MissingConstraints" />
 
   <ImageView
@@ -44,10 +44,11 @@
       android:src="@drawable/instagram"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.224"
+      app:layout_constraintHorizontal_bias="0.225"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imgPinterest"
-      app:layout_constraintVertical_bias="0.224" />
+      app:layout_constraintVertical_bias="0.572" />
+
 
   <ImageView
       android:id="@+id/imgTiktok"
@@ -57,10 +58,10 @@
       android:src="@drawable/tiktok"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.458"
+      app:layout_constraintHorizontal_bias="0.475"
       app:layout_constraintStart_toEndOf="@+id/imgInstagram"
       app:layout_constraintTop_toBottomOf="@+id/imgFacebook"
-      app:layout_constraintVertical_bias="0.224" />
+      app:layout_constraintVertical_bias="0.574" />
 
   <ImageView
       android:id="@+id/imgMessenger"
@@ -70,7 +71,19 @@
       android:src="@drawable/messenger"
       app:layout_constraintBottom_toTopOf="@+id/imgPinterest"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.199"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
+  <ImageView
+      android:id="@+id/imgWeather"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center"
+      android:src="@drawable/clouds_and_sun"
+      app:layout_constraintBottom_toTopOf="@+id/imgFacebook"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/imgMessenger"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.497" />
 </androidx.constraintlayout.widget.ConstraintLayout>

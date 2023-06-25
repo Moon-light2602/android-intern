@@ -16,8 +16,8 @@ import edu.hanu.app.messenger.models.BubbleChat;
 
 public class ChatMessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    public static final int TYPE_SENDER = 0;
-    public static final int TYPE_RECEIVER = 1;
+    public static final int SENDER = 0;
+    public static final int RECEIVER = 1;
 
     List<BubbleChat> list;
 
@@ -33,10 +33,10 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        if(viewType == TYPE_SENDER) {
+        if(viewType == SENDER) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_send, parent, false);
             return new SenderHolder(view);
-        } else if (viewType == TYPE_RECEIVER) {
+        } else if (viewType == RECEIVER) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_receive, parent, false);
             return new ReceiverHolder(view);
         }
@@ -46,10 +46,10 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         BubbleChat item = list.get(position);
-        if(item.getType() == TYPE_SENDER) {
+        if(item.getType() == SENDER) {
             SenderHolder senderHolder = (SenderHolder) holder;
             senderHolder.setData(item);
-        } else if (item.getType() == TYPE_RECEIVER) {
+        } else if (item.getType() == RECEIVER) {
             ReceiverHolder receiverHolder = (ReceiverHolder) holder;
             receiverHolder.setData(item);
         }
@@ -57,10 +57,7 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     @Override
     public int getItemCount() {
-        if (list != null) {
-            return list.size();
-        }
-        return 0;
+        return list.size();
     }
 
     private class SenderHolder extends RecyclerView.ViewHolder {
