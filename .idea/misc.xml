@@ -47,6 +47,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/custom_add_story_icon.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/custom_background_edittext.xml" value="0.1745" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/custom_background_status_bar.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/edit_back_text.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/edittext_bg.xml" value="0.134" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/gradient.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.1545" />
@@ -66,6 +67,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_second.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_tiktok.xml" value="0.12" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_weather.xml" value="0.176" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_weather_api.xml" value="0.17617753623188406" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/bubble_left.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/bubble_right.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/contain_main.xml" value="0.24074074074074073" />
