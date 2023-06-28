@@ -18,7 +18,7 @@ import java.util.Date;
 import java.util.List;
 
 import edu.hanu.app.R;
-import edu.hanu.app.weather.Models.MausamData;
+import edu.hanu.app.weather.Models.WeatherData;
 import edu.hanu.app.weather.Models.main;
 import edu.hanu.app.weather.Models.weather;
 import retrofit2.Call;
@@ -93,26 +93,26 @@ public class WeatherActivity extends AppCompatActivity {
 
         InterfaceApi interfaceApi = retrofit.create(InterfaceApi.class);
 
-        Call<MausamData> call = interfaceApi.getData(cityname, "80409e07282e463da7a67d85222710b6", "metric");
+        Call<WeatherData> call = interfaceApi.getData(cityname, "80409e07282e463da7a67d85222710b6", "metric");
 
-        call.enqueue(new Callback<MausamData>() {
+        call.enqueue(new Callback<WeatherData>() {
             @Override
-            public void onResponse(Call<MausamData> call, Response<MausamData> response) {
+            public void onResponse(Call<WeatherData> call, Response<WeatherData> response) {
 
                 if(response.isSuccessful()){
 
-                    MausamData mausamData = response.body();
+                    WeatherData weatherData = response.body();
 
-                    main to = mausamData.getMain();
+                    main to = weatherData.getMain();
 
                     mainTempValue.setText(String.valueOf(to.getTemp()) + "\u2103");
                     maxTempValue.setText(String.valueOf(to.getTemp_max()));
                     minTempValue.setText(String.valueOf(to.getTemp_min()));
                     pressureValue.setText(String.valueOf(to.getPressure()));
                     humidityValue.setText(String.valueOf(to.getHumidity()));
-                    cityName.setText(mausamData.getName());
+                    cityName.setText(weatherData.getName());
 
-                    List<weather> weather = mausamData.getWeather();
+                    List<weather> weather = weatherData.getWeather();
 
                     for (weather data : weather) {
 
@@ -122,7 +122,7 @@ public class WeatherActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<MausamData> call, Throwable t) {
+            public void onFailure(Call<WeatherData> call, Throwable t) {
             }
         });
     }

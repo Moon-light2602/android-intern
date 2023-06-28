@@ -2,13 +2,13 @@ package edu.hanu.app.weather.Models;
 
 import java.util.List;
 
-public class MausamData {
+public class WeatherData {
 
     private List<weather> weather;
     private main main;
     private String name;
 
-    public MausamData(List<edu.hanu.app.weather.Models.weather> weather, edu.hanu.app.weather.Models.main main, String name) {
+    public WeatherData(List<edu.hanu.app.weather.Models.weather> weather, edu.hanu.app.weather.Models.main main, String name) {
         this.weather = weather;
         this.main = main;
         this.name = name;
