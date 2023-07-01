@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/background_search_view_weather.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/background_status_messenger.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/bg_chat_item_new_count.xml" value="0.154" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/drawable-v24/bottom_nav.xml" value="0.1" />
@@ -106,6 +107,8 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_chat_vertical.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_receive.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_send.xml" value="0.13903985507246377" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_temp_day.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_temp_hour.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/item_video_tiktok.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/list_item_chat_messenger.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/mess_icon_phone_call.xml" value="0.24592391304347827" />
