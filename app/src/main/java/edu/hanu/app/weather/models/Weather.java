@@ -1,12 +1,12 @@
-package edu.hanu.app.weather.Models;
+package edu.hanu.app.weather.models;
 
-public class weather {
+public class Weather {
     private  int id;
     private String main;
     private String description;
     private String icon;
 
-    public weather(int id, String main, String description, String icon) {
+    public Weather(int id, String main, String description, String icon) {
         this.id = id;
         this.main = main;
         this.description = description;

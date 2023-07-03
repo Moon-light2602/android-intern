@@ -67,7 +67,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_pinterest.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_second.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_tiktok.xml" value="0.12" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_weather.xml" value="0.176" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_weather.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/activity_weather_api.xml" value="0.17617753623188406" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/bubble_left.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/layout/bubble_right.xml" value="0.25416666666666665" />
@@ -121,6 +121,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_items.xml" value="0.16" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_tiktok.xml" value="0.18515625" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_toolbar_messenger.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/menu_weather.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Pinterest/app/src/main/res/menu/nav_messenger.xml" value="0.264" />
       </map>
     </option>

@@ -9,20 +9,29 @@
     tools:context=".weather.WeatherActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android_layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="@color/black_shade_1">
+            app:contentScrim="#A3A3A3">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/sky1"
+                android:src="@drawable/sky_weather"
                 android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời tiết"
+                android:textSize="50sp"
+                android:textColor="@color/black"
+                app:layout_collapseMode="parallax"
+                android:layout_gravity="center"/>
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/tool_bar"
@@ -64,7 +73,7 @@
                 app:layout_constraintStart_toStartOf="parent"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_search"
+                android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_search"
@@ -111,10 +120,10 @@
                         android:id="@+id/tvCityName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconLocation"
                         android:text="Ha Noi"
-                        android:textSize="25sp"
                         android:textColor="@color/black"
-                        android:layout_toEndOf="@id/iconLocation"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/tvCurrentTime"
@@ -122,7 +131,7 @@
                         android:layout_height="wrap_content"
                         android:text="T.3, 30 thang 6 12:12"
                         android:textSize="15sp"
-                        android:textColor="#717171"
+                        android:textColor="#DDDDDD"
                         android:layout_marginTop="35dp"
                         android:layout_alignTop="@id/tvCityName"
                         android:layout_alignParentStart="true"/>
@@ -140,12 +149,22 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
 
-                    <ImageView
+                    <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/iconWeather"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/sunny"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        app:lottie_rawRes="@raw/sunny"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iconWeather"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/sunny"-->
+<!--                        android:layout_gravity="center_vertical"/>-->
 
                     <TextView
                         android:id="@+id/tvCurrentTemp"
@@ -161,7 +180,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/tvDescription"
@@ -169,6 +188,7 @@
                         android:layout_height="wrap_content"
                         android:text="Chủ yếu có mây"
                         android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
                         android:layout_gravity="end"/>
 
                     <TextView
@@ -186,6 +206,7 @@
                         android:text="Cảm giác như 41⁰"
                         android:layout_marginRight="5dp"
                         android:layout_gravity="end"/>
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -204,7 +225,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/container_temp_by_day"
+                android:id="@+id/temp_by_day"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -242,7 +263,7 @@
                     </RelativeLayout>
 
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rvDisplayTempByDay"
+                        android:id="@+id/rcvDisplayTempByDay"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         tools:listitem="@layout/item_temp_day"/>
@@ -256,7 +277,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="15dp"
-                app:layout_constraintTop_toBottomOf="@id/container_temp_by_day"
+                app:layout_constraintTop_toBottomOf="@id/temp_by_day"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
@@ -572,7 +593,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đã cập nhật 14:02, 28/6"
+                    android:text="Đã cập nhật 14:02, 07/03"
                     android:textStyle="bold"
                     android:layout_marginRight="10dp"
                     android:layout_alignParentEnd="true"/>
